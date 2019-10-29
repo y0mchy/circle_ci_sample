@@ -12,8 +12,8 @@ class SumTest(unittest.TestCase):
 
     def test_sum2(self):
         v1 = 23
-        v2 = 34
-        ans = 57
+        v2 = 39
+        ans = 62
         print("v1,v2,ans = ",v1,v2,ans)
         self.assertEqual(add(v1,v2),ans)
 
