@@ -1,0 +1,18 @@
+version: 2
+
+jobs:
+  test:
+    docker:
+      - image: circleci/python:3.8.0
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: 
+          name: Run test
+          command: python3 -m unittest sum_test.py
+
+workflows:
+  version: 2
+  workflows:
+    jobs:
+      - test
